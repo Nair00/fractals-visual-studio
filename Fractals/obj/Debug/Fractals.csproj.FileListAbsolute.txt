@@ -1,0 +1,11 @@
+D:\Projects\Visual Studio\Fractals\Fractals\bin\Debug\Fractals.exe.config
+D:\Projects\Visual Studio\Fractals\Fractals\bin\Debug\Fractals.exe
+D:\Projects\Visual Studio\Fractals\Fractals\bin\Debug\Fractals.pdb
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.csprojAssemblyReference.cache
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.Menu.resources
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.Properties.Resources.resources
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.csproj.GenerateResource.cache
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.exe
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.pdb
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.formLevyC.resources
