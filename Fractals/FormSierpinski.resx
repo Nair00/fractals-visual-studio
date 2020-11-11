@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="labelInfo.Text" xml:space="preserve">
-    <value>Instructions for use: Choose a fractal from the left submenu, then choose a number of iterations and press the 'Start Generating' button. I recommend starting from 0 iterations and going up. The time needed for generating goes up exponentially for each iteration. If it takes too long you can stop the generation by pressing the 'Stop' button.</value>
-  </data>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

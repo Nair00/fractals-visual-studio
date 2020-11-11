@@ -29,12 +29,12 @@ namespace Fractals
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormKoch2());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormSierpinski());
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -72,14 +72,11 @@ namespace Fractals
             childForm.Show();
 
             labelInfo.Visible = false;
-            labelWarning.Visible = false;
         }
 
         private void MainPanel_SizeChanged(object sender, EventArgs e)
         {
             labelInfo.MaximumSize = new Size(panelMain.Width, panelMain.Height);
-            labelWarning.MaximumSize = new Size(panelMain.Width, panelMain.Height);
-
         }
 
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)

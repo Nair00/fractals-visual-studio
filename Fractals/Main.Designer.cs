@@ -42,7 +42,6 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.labelWarning = new System.Windows.Forms.Label();
             this.labelInfo = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelScrollingMenu.SuspendLayout();
@@ -165,7 +164,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 65);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Sierpinski Curve";
+            this.button4.Text = "Sierpinski Carpet";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -248,7 +247,6 @@
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(32)))), ((int)(((byte)(76)))));
-            this.panelMain.Controls.Add(this.labelWarning);
             this.panelMain.Controls.Add(this.labelInfo);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(200, 0);
@@ -256,20 +254,6 @@
             this.panelMain.Size = new System.Drawing.Size(904, 591);
             this.panelMain.TabIndex = 1;
             this.panelMain.SizeChanged += new System.EventHandler(this.MainPanel_SizeChanged);
-            // 
-            // labelWarning
-            // 
-            this.labelWarning.AutoSize = true;
-            this.labelWarning.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelWarning.Font = new System.Drawing.Font("MS PGothic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWarning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(5)))), ((int)(((byte)(2)))));
-            this.labelWarning.Location = new System.Drawing.Point(0, 471);
-            this.labelWarning.MaximumSize = new System.Drawing.Size(904, 591);
-            this.labelWarning.Name = "labelWarning";
-            this.labelWarning.Size = new System.Drawing.Size(892, 120);
-            this.labelWarning.TabIndex = 19;
-            this.labelWarning.Text = resources.GetString("labelWarning.Text");
-            this.labelWarning.Visible = false;
             // 
             // labelInfo
             // 
@@ -281,11 +265,9 @@
             this.labelInfo.Location = new System.Drawing.Point(0, 0);
             this.labelInfo.MaximumSize = new System.Drawing.Size(904, 591);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(902, 72);
+            this.labelInfo.Size = new System.Drawing.Size(903, 96);
             this.labelInfo.TabIndex = 18;
-            this.labelInfo.Text = "Instructiuni de utilizare: Alegeti un fractal, iar apoi alegeti numarul de iterat" +
-    "ii generate. Pentru o vizualizare mai buna, recomand sa generati incepand cu 0 i" +
-    "teratii si incrementand cu cate 1.";
+            this.labelInfo.Text = resources.GetString("labelInfo.Text");
             // 
             // Menu
             // 
@@ -324,7 +306,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label labelInfo;
-        private System.Windows.Forms.Label labelWarning;
     }
 }
 

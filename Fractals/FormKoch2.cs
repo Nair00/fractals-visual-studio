@@ -11,52 +11,58 @@ using System.Windows.Forms;
 
 namespace Fractals
 {
-    public partial class FormKoch1 : Form
+    public partial class FormKoch2 : Form
     {
-        public FormKoch1()
+
+        public FormKoch2()
         {
             InitializeComponent();
         }
 
         double angle = 0;
-        double x = 0;
-        double y = 0;
-
+        double x = 50;
+        double y = 50;
         Color penColor = Color.White;
         Color bgColor = Color.FromArgb(43, 40, 76);
 
         private void line(double L)
         {
-            double x1 = x + L * Math.Cos(angle);
-            double y1 = y + L * Math.Sin(angle);
+            double x1 = x;
+            double y1 = y;
 
-            Graphics panel = panelDraw.CreateGraphics();
-            panel.DrawLine(new Pen(penColor, 1), (float) x, (float) y, (float) x1, (float) y1);
+            x = x + L * Math.Cos(angle);
+            y = y + L * Math.Sin(angle);
 
-            x = x1;
-            y = y1;
+            Graphics back = panelDraw.CreateGraphics();
+            back.DrawLine(new Pen(penColor, 1), (float) x, (float) y, (float) x1, (float) y1);
         }
 
-        void rotate(double x)
+        void rotate(double r)
         {
-            angle += x * Math.PI / 180;
+            angle += r;
         }
 
-        private void koch(int n, double length, BackgroundWorker worker)
+        private void desen(int n, double L, BackgroundWorker worker)
         {
             if (worker.CancellationPending) return;
             if (n == 0)
             {
-                line(length);
+                line(L);
             }
             else
             {
-                length = length / (2 + Math.Sin(Math.PI / 18) / Math.Sin(Math.PI * 0.47));
-                koch(n - 1, length, worker); rotate(-85);
-                koch(n - 1, length, worker); rotate(170);
-                koch(n - 1, length, worker); rotate(-85);
-                koch(n - 1, length, worker);
+                desen(n - 1, L / 3, worker); rotate(Math.PI / 3);
+                desen(n - 1, L / 3, worker); rotate(-2 * Math.PI / 3);
+                desen(n - 1, L / 3, worker); rotate(Math.PI / 3);
+                desen(n - 1, L / 3, worker);
             }
+        }
+
+        private void centru(int n, double L, BackgroundWorker worker)
+        {
+            desen(n, L, worker); rotate(2 * Math.PI / 3);
+            desen(n, L, worker); rotate(2 * Math.PI / 3);
+            desen(n, L, worker); rotate(2 * Math.PI / 3);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,14 +75,17 @@ namespace Fractals
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             int n;
+
             double L = panelDraw.Width;
             x = 0;
-            y = 3 * panelDraw.Width / 5;
-            n = Convert.ToInt32(numericUpDown1.Text);
-            Graphics panel = panelDraw.CreateGraphics();
-            panel.Clear(bgColor);
+            y = panelDraw.Width / 10;
 
-            koch(n, L, backgroundWorker1);
+            n = Convert.ToInt32(numericUpDown1.Text);
+
+            Graphics back = panelDraw.CreateGraphics();
+            back.Clear(bgColor);
+
+            centru(n, L , backgroundWorker1);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -90,7 +99,7 @@ namespace Fractals
             buttonStart.Width = panelButtons.Width / 2;
         }
 
-        private void formKoch1_Resize(object sender, EventArgs e)
+        private void formKoch2_Resize(object sender, EventArgs e)
         {
             buttonStart.Width = panelButtons.Width / 2;
             labelInfo.MaximumSize = new Size(panelInfo.Width, panelInfo.Height);
@@ -99,7 +108,7 @@ namespace Fractals
             panelDraw.Width = panelDraw.Height;
         }
 
-        private void formKoch1_FormClosing(object sender, FormClosingEventArgs e)
+        private void formKoch2_FormClosing(object sender, FormClosingEventArgs e)
         {
             backgroundWorker1.CancelAsync();
             Dispose();

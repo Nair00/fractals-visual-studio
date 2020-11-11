@@ -149,12 +149,10 @@
             // labelTitle
             // 
             this.labelTitle.AccessibleName = "formKoch1";
-            this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTitle.AutoSize = true;
+            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelTitle.Font = new System.Drawing.Font("MS PGothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(12, 0);
+            this.labelTitle.Location = new System.Drawing.Point(0, 0);
             this.labelTitle.MaximumSize = new System.Drawing.Size(313, 100);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(293, 100);
@@ -173,12 +171,10 @@
             // 
             // labelInfo
             // 
-            this.labelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelInfo.AutoSize = true;
+            this.labelInfo.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelInfo.Font = new System.Drawing.Font("MS PGothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo.Location = new System.Drawing.Point(40, 31);
+            this.labelInfo.Location = new System.Drawing.Point(0, 0);
             this.labelInfo.MaximumSize = new System.Drawing.Size(313, 100);
             this.labelInfo.Name = "labelInfo";
             this.labelInfo.Size = new System.Drawing.Size(231, 48);
@@ -203,6 +199,7 @@
             this.ShowIcon = false;
             this.Text = "Quadratic Van Koch Curve Type 1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formKoch1_FormClosing);
+            this.Resize += new System.EventHandler(this.formKoch1_Resize);
             this.panelButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panelIterator.ResumeLayout(false);

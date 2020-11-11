@@ -1,6 +1,6 @@
 ﻿namespace Fractals
 {
-    partial class FormLevyC
+    partial class FormKoch2
     {
         /// <summary>
         /// Required designer variable.
@@ -149,14 +149,14 @@
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTitle.Font = new System.Drawing.Font("MS PGothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.Location = new System.Drawing.Point(0, 0);
             this.labelTitle.MaximumSize = new System.Drawing.Size(313, 100);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(117, 38);
+            this.labelTitle.Size = new System.Drawing.Size(293, 100);
             this.labelTitle.TabIndex = 1;
-            this.labelTitle.Text = "LevyC";
+            this.labelTitle.Text = "Quadratic Van Koch Curve Type 2";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelInfo
@@ -181,7 +181,7 @@
             this.labelInfo.Text = "Choose the number of iterations:";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FormLevyC
+            // FormKoch2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,11 +193,11 @@
             this.Controls.Add(this.panelButtons);
             this.Controls.Add(this.panelDraw);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormLevyC";
+            this.Name = "FormKoch2";
             this.ShowIcon = false;
-            this.Text = "LevyC";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formLevyC_FormClosing);
-            this.Resize += new System.EventHandler(this.formLevyC_Resize);
+            this.Text = "Quadratic Van Koch Curve Type 2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formKoch2_FormClosing);
+            this.Resize += new System.EventHandler(this.formKoch2_Resize);
             this.panelButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panelIterator.ResumeLayout(false);
