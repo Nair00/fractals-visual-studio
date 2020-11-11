@@ -1,5 +1,5 @@
 # Fractals App
 
-## The app is in upgrading process. I started redisigning the interface, but got a little sidetracked so there's still a bit to modify
+## The app does not have any executable from which it can be launched yet.
 
-
+If you want to run the app, pull the repository and run the solution 'Fractals.sln' in Visual Studio 2019, then press Start.
