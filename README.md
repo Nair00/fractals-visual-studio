@@ -8,3 +8,5 @@ Alternatively you can open the solution 'Fractals.sln' in Visual Studio 2019 and
 This app is built with C# in Visual Studio. It is a responsive windows application that recursively generates some fractals and gives full control over the number of iterations. It also shows the drawing process.
 
 ![Main screen image](Screenshots/MainScreen1.PNG)
+![Pinwheel fractal](Screenshots/Pinwheel1.PNG)
+![Golden Dragon fractal](Screenshots/Golden1.PNG)
