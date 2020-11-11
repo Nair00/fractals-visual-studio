@@ -1,6 +1,6 @@
 ﻿namespace Fractals
 {
-    partial class FormLevyC
+    partial class FormSierpinski
     {
         /// <summary>
         /// Required designer variable.
@@ -39,6 +39,7 @@
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.labelInfo = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panelButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panelIterator.SuspendLayout();
@@ -130,6 +131,7 @@
             // 
             // panelIterator
             // 
+            this.panelIterator.Controls.Add(this.checkBox1);
             this.panelIterator.Controls.Add(this.numericUpDown1);
             this.panelIterator.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelIterator.Location = new System.Drawing.Point(0, 485);
@@ -154,9 +156,9 @@
             this.labelTitle.Location = new System.Drawing.Point(0, 0);
             this.labelTitle.MaximumSize = new System.Drawing.Size(313, 100);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(117, 38);
+            this.labelTitle.Size = new System.Drawing.Size(289, 38);
             this.labelTitle.TabIndex = 1;
-            this.labelTitle.Text = "LevyC";
+            this.labelTitle.Text = "Sierpinski Carpet";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelInfo
@@ -181,7 +183,19 @@
             this.labelInfo.Text = "Choose the number of iterations:";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FormLevyC
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.checkBox1.Font = new System.Drawing.Font("MS PGothic", 14F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.Location = new System.Drawing.Point(0, 0);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(82, 22);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Shade";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // FormSierpinski
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,14 +207,15 @@
             this.Controls.Add(this.panelButtons);
             this.Controls.Add(this.panelDraw);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormLevyC";
+            this.Name = "FormSierpinski";
             this.ShowIcon = false;
-            this.Text = "LevyC";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formLevyC_FormClosing);
-            this.Resize += new System.EventHandler(this.formLevyC_Resize);
+            this.Text = "Sierpinski Carpet";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formSierpinski_FormClosing);
+            this.Resize += new System.EventHandler(this.formSierpinski_Resize);
             this.panelButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panelIterator.ResumeLayout(false);
+            this.panelIterator.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panelInfo.ResumeLayout(false);
@@ -222,5 +237,6 @@
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Panel panelInfo;
         private System.Windows.Forms.Label labelInfo;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
