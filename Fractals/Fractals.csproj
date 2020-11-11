@@ -64,11 +64,23 @@
     <Compile Include="FormKoch2.Designer.cs">
       <DependentUpon>FormKoch2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPinwheel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPinwheel.Designer.cs">
+      <DependentUpon>FormPinwheel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSierpinski.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormSierpinski.Designer.cs">
       <DependentUpon>FormSierpinski.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSphinx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSphinx.Designer.cs">
+      <DependentUpon>FormSphinx.cs</DependentUpon>
     </Compile>
     <Compile Include="FormZOrder.cs">
       <SubType>Form</SubType>
@@ -99,8 +111,14 @@
     <EmbeddedResource Include="FormKoch2.resx">
       <DependentUpon>FormKoch2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPinwheel.resx">
+      <DependentUpon>FormPinwheel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSierpinski.resx">
       <DependentUpon>FormSierpinski.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSphinx.resx">
+      <DependentUpon>FormSphinx.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormZOrder.resx">
       <DependentUpon>FormZOrder.cs</DependentUpon>

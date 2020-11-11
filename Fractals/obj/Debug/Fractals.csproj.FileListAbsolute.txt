@@ -14,3 +14,5 @@ D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.FormKoch2.resourc
 D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.FormSierpinski.resources
 D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.FormZOrder.resources
 D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.FormGolden.resources
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.FormSphinx.resources
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.FormPinwheel.resources

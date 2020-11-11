@@ -49,12 +49,12 @@ namespace Fractals
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormSphinx());
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormPinwheel());
         }
 
         private Form activeForm = null;
