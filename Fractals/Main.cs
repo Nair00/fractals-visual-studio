@@ -39,12 +39,12 @@ namespace Fractals
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormZOrder());
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormGolden());
         }
 
         private void button7_Click(object sender, EventArgs e)
