@@ -1,6 +1,6 @@
 ﻿namespace Fractals
 {
-    partial class FormLevyC
+    partial class FormKoch1
     {
         /// <summary>
         /// Required designer variable.
@@ -148,17 +148,18 @@
             // 
             // labelTitle
             // 
+            this.labelTitle.AccessibleName = "formKoch1";
             this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("MS PGothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(80, 29);
+            this.labelTitle.Location = new System.Drawing.Point(12, 0);
             this.labelTitle.MaximumSize = new System.Drawing.Size(313, 100);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(117, 38);
+            this.labelTitle.Size = new System.Drawing.Size(293, 100);
             this.labelTitle.TabIndex = 1;
-            this.labelTitle.Text = "LevyC";
+            this.labelTitle.Text = "Quadratic Van Koch Curve Type 1";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelInfo
@@ -185,8 +186,9 @@
             this.labelInfo.Text = "Choose the number of iterations:";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FormLevyC
+            // FormKoch1
             // 
+            this.AccessibleName = "formKoch1";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(32)))), ((int)(((byte)(76)))));
@@ -197,11 +199,10 @@
             this.Controls.Add(this.panelButtons);
             this.Controls.Add(this.panelDraw);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormLevyC";
+            this.Name = "FormKoch1";
             this.ShowIcon = false;
-            this.Text = "LevyC";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formLevyC_FormClosing);
-            this.Resize += new System.EventHandler(this.formLevyC_Resize);
+            this.Text = "Quadratic Van Koch Curve Type 1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formKoch1_FormClosing);
             this.panelButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panelIterator.ResumeLayout(false);

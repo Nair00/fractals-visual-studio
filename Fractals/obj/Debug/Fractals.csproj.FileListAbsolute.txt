@@ -9,3 +9,4 @@ D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.csproj.CoreCompil
 D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.exe
 D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.pdb
 D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.formLevyC.resources
+D:\Projects\Visual Studio\Fractals\Fractals\obj\Debug\Fractals.FormKoch1.resources

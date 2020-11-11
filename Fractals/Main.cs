@@ -24,7 +24,7 @@ namespace Fractals
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //openChildForm(new formKoch1());
+            openChildForm(new FormKoch1());
         }
 
         private void button3_Click(object sender, EventArgs e)
