@@ -87,6 +87,7 @@ namespace Fractals
             panel.Clear(bgColor);
             buttonStart.Enabled = false;
             buttonStop.Enabled = true;
+            checkBox1.Enabled = false;
             backgroundWorker1.RunWorkerAsync();
         }
 
@@ -135,6 +136,7 @@ namespace Fractals
         {
             buttonStart.Enabled = true;
             buttonStop.Enabled = false;
+            checkBox1.Enabled = true;
         }
     }
 }

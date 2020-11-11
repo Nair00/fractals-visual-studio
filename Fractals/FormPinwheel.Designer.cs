@@ -1,6 +1,6 @@
 ﻿namespace Fractals
 {
-    partial class FormSierpinski
+    partial class FormPinwheel
     {
         /// <summary>
         /// Required designer variable.
@@ -35,11 +35,11 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panelIterator = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.labelInfo = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panelButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panelIterator.SuspendLayout();
@@ -139,18 +139,6 @@
             this.panelIterator.Size = new System.Drawing.Size(313, 22);
             this.panelIterator.TabIndex = 5;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.checkBox1.Font = new System.Drawing.Font("MS PGothic", 14F, System.Drawing.FontStyle.Bold);
-            this.checkBox1.Location = new System.Drawing.Point(0, 0);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(82, 22);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Shade";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // panelTitle
             // 
             this.panelTitle.Controls.Add(this.labelTitle);
@@ -168,9 +156,9 @@
             this.labelTitle.Location = new System.Drawing.Point(0, 0);
             this.labelTitle.MaximumSize = new System.Drawing.Size(313, 100);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(289, 38);
+            this.labelTitle.Size = new System.Drawing.Size(279, 38);
             this.labelTitle.TabIndex = 1;
-            this.labelTitle.Text = "Sierpinski Carpet";
+            this.labelTitle.Text = "Pinwheel Fractal";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelInfo
@@ -195,7 +183,19 @@
             this.labelInfo.Text = "Choose the number of iterations:";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FormSierpinski
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.checkBox1.Font = new System.Drawing.Font("MS PGothic", 14F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.Location = new System.Drawing.Point(0, 0);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(82, 22);
+            this.checkBox1.TabIndex = 6;
+            this.checkBox1.Text = "Shade";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // FormPinwheel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -207,11 +207,11 @@
             this.Controls.Add(this.panelButtons);
             this.Controls.Add(this.panelDraw);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormSierpinski";
+            this.Name = "FormPinwheel";
             this.ShowIcon = false;
-            this.Text = "Sierpinski Carpet";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formSierpinski_FormClosing);
-            this.Resize += new System.EventHandler(this.formSierpinski_Resize);
+            this.Text = "Pinwheel Fractal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formPinwheel_FormClosing);
+            this.Resize += new System.EventHandler(this.formPinwheel_Resize);
             this.panelButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panelIterator.ResumeLayout(false);
