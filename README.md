@@ -9,4 +9,7 @@ This app is built with C# in Visual Studio. It is a responsive windows applicati
 
 ![Main screen image](Screenshots/MainScreen1.PNG)
 ![Pinwheel fractal](Screenshots/Pinwheel1.PNG)
+
+The app is responsive and can adapt to diferent screen sizes without losing any details.
 ![Golden Dragon fractal](Screenshots/Golden1.PNG)
+![Levy C fractal](Screenshots/Levy2.PNG)
