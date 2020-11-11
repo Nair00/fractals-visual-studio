@@ -35,11 +35,11 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panelIterator = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.labelInfo = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panelButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panelIterator.SuspendLayout();
@@ -120,7 +120,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(261, 0);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(0);
             this.numericUpDown1.Maximum = new decimal(new int[] {
-            10,
+            9,
             0,
             0,
             0});
@@ -138,6 +138,18 @@
             this.panelIterator.Name = "panelIterator";
             this.panelIterator.Size = new System.Drawing.Size(313, 22);
             this.panelIterator.TabIndex = 5;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.checkBox1.Font = new System.Drawing.Font("MS PGothic", 14F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.Location = new System.Drawing.Point(0, 0);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(82, 22);
+            this.checkBox1.TabIndex = 6;
+            this.checkBox1.Text = "Shade";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // panelTitle
             // 
@@ -182,18 +194,6 @@
             this.labelInfo.TabIndex = 1;
             this.labelInfo.Text = "Choose the number of iterations:";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.checkBox1.Font = new System.Drawing.Font("MS PGothic", 14F, System.Drawing.FontStyle.Bold);
-            this.checkBox1.Location = new System.Drawing.Point(0, 0);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(82, 22);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Shade";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // FormPinwheel
             // 
